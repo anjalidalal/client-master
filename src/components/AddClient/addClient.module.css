@@ -1,0 +1,351 @@
+.tabsBar {
+  width: 100%;
+  height: 69px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal,
+.themeSetup {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+.modal > h1,
+.themeSetup > h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.0025em;
+  color: #030037;
+  margin-top: 10px;
+}
+.modal > p,
+.themeSetup > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  color: #686687;
+}
+.uploadLogo {
+  border: 0.5px solid #68668727;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 65px;
+  align-items: center;
+  border-radius: 50%;
+  background: #b8babc19;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0px;
+  background-color: #ffffff;
+}
+.logoContainer > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 0.005em;
+  color: #030037;
+}
+.logoContainer > p > span {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #686687;
+}
+.form,
+.paymentSetupForm {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 18px;
+}
+.paymentSetupForm {
+  margin-top: 20px;
+}
+.bottomButton {
+  margin: 20px 0px 10px 0px;
+}
+.bottomButton,
+.bottomButton > button,
+.bottomButton > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottomButton > button,
+.saveAndContinue {
+  padding: 12px 16px;
+  gap: 12px;
+  border: none;
+  width: 166px;
+  height: 40px;
+  background: #153ac7;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+.bottomButton > div {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #686687;
+  margin: 0px 30px;
+}
+.checkboxes > div > label,
+.radioButton > div > label {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #030037;
+}
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.checkboxes > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+}
+.checkboxes > p,
+.radioButton > p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030037;
+}
+.radioButton > div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: left;
+}
+.radioButton > div > label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: left;
+}
+.colorTheme {
+  margin: 20px 0px 10px 0px;
+}
+.colorTheme > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #686687;
+  margin: 10px 0px;
+}
+.loginTheme,
+.checkList,
+.moduleList {
+  display: flex;
+  flex-direction: column;
+}
+.loginTheme > p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030037;
+}
+.loginTheme > span {
+  color: #686687;
+}
+.loginTheme > label,
+.moduleList > label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0px 0px 0px;
+  letter-spacing: 0.0025em;
+  color: #030037;
+}
+.loginTheme > input {
+  padding: 12px 16px;
+  width: 300px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  margin: 10px 20px;
+}
+.positionTheme > div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.positionTheme > p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030037;
+  margin: 10px 0px;
+}
+.left,
+.right,
+.center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.left > div,
+.right > div,
+.center > div {
+  width: 120px;
+  height: 84px;
+  background: #f5f5f5;
+  border: 1px solid #153ac7;
+  border-radius: 8px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+.left > label,
+.right > label,
+.center > label,
+.checkList > label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.center > div {
+  justify-content: center;
+}
+.right > div {
+  justify-content: right;
+}
+.rectangle {
+  width: 32px;
+  height: 40px;
+  background: #153ac7;
+  border-radius: 4px;
+}
+.checkList {
+  margin-top: 10px;
+  padding: 10px 10px 0px 0px;
+}
+.checkList > label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  color: #030037;
+  margin-bottom: 5px;
+  width: 200px;
+  height: 40px;
+  padding: 0px 10px;
+}
+.checkList > label:hover {
+  width: 200px;
+  height: 40px;
+  background: #153ac7;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.checkList > label:hover > input[type="checkbox"] {
+  accent-color: #ffffff;
+}
+.checkList > label > input {
+  margin-right: 10px;
+}
+.moduleSetup {
+  display: flex;
+  flex-direction: column;
+}
+.module {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 24px;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0px 1px 5px rgba(3, 0, 55, 0.08);
+}
+.moduleList {
+  display: flex;
+  flex-direction: column;
+}
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e8ebf9;
+}
+
+.moduleHeader > div > p {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.0025em;
+  color: #030037;
+}
+.moduleHeader > div > p > span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #686687;
+}
+.moduleHeader > button {
+  background: #153ac7;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  height: 40px;
+  padding: 0px 10px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .modal,
+  .themeSetup {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  .moduleSetup {
+    display: flex;
+    flex-direction: row;
+  }
+}
