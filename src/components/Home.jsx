@@ -1,13 +1,11 @@
 import React from "react";
 import SideNav from "./sideNavbar/SideNav";
-import LastPage from "./lastpage/LastPage";
+import Login from "./login/Login";
+import { useSelector } from "react-redux";
 
 const Home = () => {
-  return (
-    <>
-      <SideNav />
-      <LastPage />
-    </>
-  );
+  const user = useSelector((state) => state.user);
+  console.log(user);
+  return <>{user ? <SideNav /> : <Login />}</>;
 };
 export default Home;

@@ -11,7 +11,7 @@ const LastPage = () => {
 
   const handleClick = () => {
     setBtnStyle(false);
-    navigate("/client-master");
+    navigate("/");
   };
 
   return (

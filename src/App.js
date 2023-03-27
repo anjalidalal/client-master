@@ -4,13 +4,9 @@ import SideNav from "./components/sideNavbar/SideNav";
 import { useDispatch } from "react-redux";
 import { getUser } from "./Redux/Action";
 import { auth } from "./components/service";
-import LastPage from "./components/lastpage/LastPage";
-import { useSelector } from "react-redux";
-import Login from "./components/login/Login";
+import Routes from "../src/components/Routes";
 
 const App = () => {
-  const user = useSelector((state) => state.user);
-  console.log(user);
   const dispatch = useDispatch();
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -25,7 +21,11 @@ const App = () => {
       );
     });
   }, []);
-  return <>{user ? <Home /> : <Login />}</>;
+  return (
+    <>
+      <Routes />
+    </>
+  );
 };
 
 export default App;
