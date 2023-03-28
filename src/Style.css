@@ -1,11 +1,14 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0%;
+  margin: 0%;
   box-sizing: border-box;
   font-family: "Nunito Sans";
 }
 body {
   background: #f8f9fd;
+}
+#root::-webkit-scrollbar {
+  display: none;
 }
 .home {
   background: #f8f9fd;
@@ -17,7 +20,9 @@ body {
   border-radius: 8px;
   width: 96%;
 }
-
+button {
+  cursor: pointer;
+}
 .searchBar {
   width: 100%;
   height: 40px;
