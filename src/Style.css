@@ -135,7 +135,6 @@ body {
   justify-content: space-between;
   padding: 0px;
   width: 100%;
-  padding: 10px;
   top: 0px;
   background: #ffffff;
   box-shadow: 0px 1px 5px rgba(3, 0, 55, 0.08);
@@ -145,12 +144,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  padding: 10px;
 }
 .sideNavFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 10px;
   width: 100%;
 }
 .sideNavFooter > div {
@@ -242,12 +242,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0px;
     width: 27%;
-    height: 100%;
-    padding: 13px;
-  }
-  .sideNav {
     height: 100vh;
   }
   .sideNav > h1 {
