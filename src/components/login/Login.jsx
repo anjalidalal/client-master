@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className={styles.signInPage}>
       <div className={styles.modal}>
-        <h1>SIGNIN</h1>
+        <h1>Sign In</h1>
         <button
           className={styles.signInBtn}
           onClick={() => {

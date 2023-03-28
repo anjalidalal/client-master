@@ -151,7 +151,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 20px 10px;
-  width: 92%;
+  width: 97%;
 }
 .sideNavFooter > div {
   display: flex;
@@ -247,6 +247,9 @@ body {
   }
   .sideNav > h1 {
     margin: 0px 0px 10px 0px;
+  }
+  .sideNavFooter {
+    width: 92%;
   }
   .sideNav > p {
     padding: 10px 0px;
