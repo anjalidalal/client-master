@@ -28,13 +28,13 @@ const LastPage = () => {
           <div className={styles.lastpageHeaderButtons}>
             <button
               onClick={() => setBtnStyle(true)}
-              className={!btnStyle ? styles.greyButton : styles.blueButton}
+              className={btnStyle ? styles.greyButton : styles.blueButton}
             >
               Add More Clients
             </button>
             <button
               onClick={() => handleClick()}
-              className={btnStyle ? styles.greyButton : styles.blueButton}
+              className={!btnStyle ? styles.greyButton : styles.blueButton}
             >
               Go to Client Master
             </button>
