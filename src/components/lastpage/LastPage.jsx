@@ -1,12 +1,10 @@
 import styles from "./lastpage.module.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import data from "../data";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LastPage = () => {
   const [btnStyle, setBtnStyle] = useState(false);
-  console.log(data);
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -42,7 +40,7 @@ const LastPage = () => {
         </div>
         <div className={styles.companyCardsComponent}>
           {data.map((el) => (
-            <div className={styles.card}>
+            <div className={styles.card} key={el.id}>
               <img src={el.icon} alt="" />
               <h1>{el.company}</h1>
               <p>{el.tenants}</p>
